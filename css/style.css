@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgb(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-bg: #111828;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: linear-gradient(140.66deg, #021B4C 8.79%, #0174A9 77.48%);
+}
+
+.blurry__background {
+    position: absolute;
+    width: 359.35px;
+    height: 126.73px;
+    left: -15px;
+    top: 56px;
+
+    background: rgba(28, 190, 236, 0.38);
+    filter: blur(256px);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-white);
+
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/* **************** NAV BAR **************** */
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+/* change nav bar styles on scroll using javascript*/
+.window-scroll{
+    background: #6B7380;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav button {
+    display: none;
+}
+
+.nav__contact {
+    display: flex;
+    background: #1CBEEC;
+    border-radius: 0.7rem;
+    padding: 8px 48px;
+    color: #fff;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+
+/* **************** HEADER **************** */
+
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left h1 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.7rem;
+
+}
+
+.vector__shape {
+    width: 6rem;
+    height: 0.8rem;
+    margin-left: 5rem;
+}
+
+.header__left p {
+    margin: 1rem 0 0.2rem;
+}
+
+
+.header__right-image {
+    width: 45rem;
+}
+
+.searchbox {
+    width: 27.8rem;
+    height: 3.5rem;
+    top: auto;
+    background: rgba(225, 228, 233, 0.25);
+    border-radius: 1rem;
+    padding-top: 0.4rem;
+    margin-top: 1rem;
+}
+
+.input__data {
+    background: #FFFFFF;
+    backdrop-filter: blur(483px);
+    border-radius: 18px;
+    width: 27rem;
+    height: 2.8rem;
+    margin-left: .3rem;
+}
+
+input[type="text"] {
+    background: none;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    width: 17rem;
+}
+
+input[type="submit"] {
+
+    color: white;
+    height: 2rem;
+    width: 7rem;
+    left: 626px;
+    background: #1CBEEC;
+    backdrop-filter: blur(483px);
+    border-radius: .7rem;
+    margin-left: 1.3rem;
+    margin-top: .5rem;
+}
+
+
+
+/* **************** PARTNERS **************** */
+
+.partners {
+    height: 45vh;
+    background: #FDFDFD;
+    padding-top: 2rem;
+
+
+}
+
+
+
+.partners h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.7rem;
+    color: #121828;
+    text-align: center;
+
+}
+
+.partners p {
+    color: red;
+    text-align: center;
+    color: black;
+}
+
+.partners__container {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.partners__container img {
+    width: 10rem;
+    display: inline;
+    gap: 10rem;
+    margin-inline: 2rem;
+
+}
+
+/* **************** ACHEIVEMENT **************** */
+.achievement {
+    background: #FDFDFD;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 10vh;
+    width: 100%;
+    margin-top: 0rem;
+
+}
+
+.achievement__list p {
+    text-align: center;
+    color: #000;
+}
+
+.achievement__list h3 {
+    text-align: center;
+    color: #000;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.achievement__list h3 span {
+    color: #1CBEEC;
+}
+
+/* **************** END OF ACHEIVEMENT **************** */
+
+
+/* **************** START OF SERVICES **************** */
+.services {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDFDFD;
+    
+}
+
+.choose h1 {
+    text-align: center;
+    background: #FDFDFD;
+    color: #000;
+
+}
+
+.services__card {
+    box-sizing: border-box;
+    width: 17rem;
+    height: 16rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 241px rgba(0, 0, 0, 0.04);
+    border-radius: 27px;
+    color: #021B4C;
+    text-align: center;
+    
+
+
+
+}
+
+.services__card img {
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+/* **************** END OF SERVICES **************** */
+
+
+/* **************** MEDIA QUERIES (TABLET) **************** */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .nav__contact{
+        display: none;
+    }
+    /* ===================NAVBAR===========================*/
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+
+    }
+
+    nav button#close-menu-btn{
+        display: none;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+
+    }
+    .nav__menu li{
+        width: 100%;
+        height: 5.8rem;
+
+    }
+
+    .nav__menu li a{
+        background: #1CBEEC;
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .nav__menu li a:hover{
+        background: #3A85AE;
+        color: white;
+    }
+/* ===================HEADER ===========================*/
+
+header{
+    height: 70vh;
+    margin-bottom: 2rem;
+}
+.header__container{
+    gap: 0;
+    padding-bottom: 3rem;
+}
+.partners{
+    height: auto;
+}
+.achievement{
+    height: auto;
+    width: 100%;
+}
+.services{
+    width: 100%;
+    height: 50vh
+}
+
+
+
+
+
+
+
+
+
+
+
+}
