@@ -32,7 +32,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: var(--color-white);
-    background: linear-gradient(140.66deg, #021B4C 8.79%, #0174A9 77.48%);
+    background: #FDFDFD;
 }
 
 .blurry__background {
@@ -122,15 +122,16 @@ img {
 
 /* **************** NAV BAR **************** */
 nav {
-    background: transparent;
+    background: linear-gradient(140.66deg, #021B4C 8.79%, #0174A9 77.48%);
     width: 100vw;
     height: 5rem;
     position: fixed;
     top: 0;
     z-index: 11;
 }
+
 /* change nav bar styles on scroll using javascript*/
-.window-scroll{
+.window-scroll {
     background: #6B7380;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -179,6 +180,7 @@ header {
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
+    background: linear-gradient(140.66deg, #021B4C 8.79%, #0174A9 77.48%);
 }
 
 .header__container {
@@ -210,6 +212,7 @@ header {
 
 .header__right-image {
     width: 45rem;
+
 }
 
 .searchbox {
@@ -339,7 +342,7 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
     background: #FDFDFD;
-    
+
 }
 
 .choose h1 {
@@ -358,7 +361,7 @@ input[type="submit"] {
     border-radius: 27px;
     color: #021B4C;
     text-align: center;
-    
+
 
 
 
@@ -373,28 +376,163 @@ input[type="submit"] {
 /* **************** END OF SERVICES **************** */
 
 
+/* **************** ABOUT SECTION **************** */
+
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
+    height: 80vh;
+    padding-top: 1rem;
+    background: #FDFDFD;
+    width: 100%;
+
+}
+
+.about__left {
+    margin: 0 auto;
+}
+
+.about__right {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    width: 50%;
+}
+
+#about__button {
+    margin-top: 1rem;
+    background: #1CBEEC;
+    box-shadow: 0px 4px 250px rgba(28, 190, 236, 0.49);
+    border-radius: .3rem;
+    color: white;
+    height: 2rem;
+    width: 7rem;
+
+}
+
+/* **************** END OF ABOUT **************** */
+
+
+/* **************** START OF FEATURED PROPERTY **************** */
+.featured__properties {
+
+    height: 100vh;
+    width: 100%;
+}
+
+.featured__properties__card {
+
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 241px rgba(0, 0, 0, 0.04);
+    border-radius: 27px;
+    width: 18rem;
+    height: 20.5rem;
+    color: black;
+    padding-left: .1rem;
+}
+
+.featured__properties__card img {
+    filter: drop-shadow(0px 4px 241px rgba(0, 0, 0, 0.04));
+    border-radius: 27px;
+    height: 13rem;
+    margin-left: .4rem;
+    margin-top: .3rem;
+}
+
+.icons__text {
+    display: flex;
+    gap: .2rem;
+}
+
+.icons__text p {
+    font-size: .9rem;
+}
+
+#properies__button {
+    background: #1CBEEC;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    border-radius: .2rem;
+    margin-left: 5rem;
+
+}
+
+.location {
+    display: flex;
+}
+
+.properties__card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* **************** MEDIA QUERIES (TABLET) **************** */
-@media screen and (max-width: 1024px){
-    .container{
+@media screen and (max-width: 1024px) {
+    .container {
         width: var(--container-width-md);
     }
-    h1{
+
+    body {
+        background: red;
+    }
+
+    h1 {
         font-size: 2.2rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.7rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.4rem;
     }
-    h4{
+
+    h4 {
         font-size: 1.2rem;
     }
-    .nav__contact{
+
+    .nav__contact {
         display: none;
     }
+
     /* ===================NAVBAR===========================*/
-    nav button{
+    nav button {
         display: inline-block;
         background: transparent;
         font-size: 1.8rem;
@@ -403,11 +541,11 @@ input[type="submit"] {
 
     }
 
-    nav button#close-menu-btn{
+    nav button#close-menu-btn {
         display: none;
     }
 
-    .nav__menu{
+    .nav__menu {
         position: fixed;
         top: 5rem;
         right: 5%;
@@ -418,13 +556,14 @@ input[type="submit"] {
         display: none;
 
     }
-    .nav__menu li{
+
+    .nav__menu li {
         width: 100%;
         height: 5.8rem;
 
     }
 
-    .nav__menu li a{
+    .nav__menu li a {
         background: #1CBEEC;
         box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
         width: 100%;
@@ -433,31 +572,100 @@ input[type="submit"] {
         place-items: center;
     }
 
-    .nav__menu li a:hover{
+    .nav__menu li a:hover {
         background: #3A85AE;
         color: white;
     }
-/* ===================HEADER ===========================*/
 
-header{
-    height: 70vh;
-    margin-bottom: 2rem;
+    /* ===================HEADER ===========================*/
+
+    header {
+        height: 70vh;
+        margin-bottom: 2rem;
+    }
+
+    .header__container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    .partners {
+        height: auto;
+    }
+
+    .achievement {
+        height: auto;
+        width: 100%;
+    }
+
+    .services {
+        width: 100%;
+        height: 50vh
+    }
+
+    .services__card {
+        height: auto;
+    }
+
+    .about__container {
+        height: auto;
+        width: 100%;
+    }
+    .about__right{
+        width: 100%;
+    }
+    .properties__card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    .featured__properties__card{
+        height: auto;
+        
+    }
+
+
+
+
+
+
+
+
+
+
 }
-.header__container{
-    gap: 0;
-    padding-bottom: 3rem;
-}
-.partners{
-    height: auto;
-}
-.achievement{
-    height: auto;
-    width: 100%;
-}
-.services{
-    width: 100%;
-    height: 50vh
-}
+
+
+/* ====================MOBILE MEDIA QUERY======================*/
+@media screen and (max-width: 600px){
+
+    body{
+        
+        width: fit-content;
+      
+    }
+    .container{
+        width: var(--container-width-sm);
+        
+    }
+
+    /* ===================NAVBAR==========================*/
+    .nav__menu{
+        right: 3%;
+    }
+        /* ===================HEADER==========================*/
+        header{
+            height: 100vh;
+            
+            
+            
+
+        }
+        .header__container{
+            grid-template-columns: 1fr;
+            text-align: center;
+            width: 100vw;
+        }
 
 
 
