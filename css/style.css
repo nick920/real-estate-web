@@ -282,7 +282,7 @@ input[type="submit"] {
 .partners p {
     color: red;
     text-align: center;
-    color: black;
+    color: red;
 }
 
 .partners__container {
