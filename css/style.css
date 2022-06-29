@@ -31,6 +31,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
+    width: 100%;
+    overflow-x: hidden;
     color: var(--color-white);
     background: #FDFDFD;
 }
@@ -177,9 +179,11 @@ nav button {
 header {
     position: relative;
     top: 5rem;
+    width: 100%;
     overflow: hidden;
-    height: 70vh;
+    min-height: 70vh;
     margin-bottom: 5rem;
+    display: flex;
     background: linear-gradient(140.66deg, #021B4C 8.79%, #0174A9 77.48%);
 }
 
@@ -189,6 +193,7 @@ header {
     align-items: center;
     gap: 5rem;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .header__left h1 {
@@ -282,7 +287,7 @@ input[type="submit"] {
 .partners p {
     color: red;
     text-align: center;
-    color: red;
+    color: black;
 }
 
 .partners__container {
@@ -611,17 +616,20 @@ input[type="submit"] {
         height: auto;
         width: 100%;
     }
-    .about__right{
+
+    .about__right {
         width: 100%;
     }
-    .properties__card{
+
+    .properties__card {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    
+
     }
-    .featured__properties__card{
+
+    .featured__properties__card {
         height: auto;
-        
+
     }
 
 
@@ -637,35 +645,106 @@ input[type="submit"] {
 
 
 /* ====================MOBILE MEDIA QUERY======================*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-    body{
-        
+    body {
+
         width: fit-content;
-      
+
     }
-    .container{
+
+    .container {
         width: var(--container-width-sm);
-        
+        margin: 0% auto;
+        width: 100%;
     }
 
     /* ===================NAVBAR==========================*/
-    .nav__menu{
+    .nav__menu {
         right: 3%;
     }
-        /* ===================HEADER==========================*/
-        header{
-            height: 100vh;
-            
-            
-            
 
-        }
-        .header__container{
-            grid-template-columns: 1fr;
-            text-align: center;
-            width: 100vw;
-        }
+    /* ===================HEADER==========================*/
+    header {
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding: 10em 1em 2em 1em;
+        margin: 0%;
+
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+
+        align-items: center;
+        align-content: center;
+        margin: 2em auto;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .header__right-image {
+        width: fit-content;
+    }
+
+    .container.header__container {
+        margin-left: 0%;
+    }
+
+    .header__left {
+        padding: 2em;
+    }
+    /* ===================PARTNERS==========================*/
+    .partners{
+        
+        padding-top: 10rem;
+        padding-right: 23rem;
+    }
+
+    /* ===================ACHEIVEMENTS==========================*/
+    .achievement{
+        display: flex;
+        padding: 1rem 3rem;
+        gap: 4rem;
+
+    }
+    /* ===================CHOOSE==========================*/
+    .choose h1{
+      display: flex;
+      padding-top: 2rem;
+      padding-left: 10rem;
+    }
+    .container.services{
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        padding-left: 10rem;
+        margin: 0 auto;
+        gap: 2rem;
+        
+    }
+
+    /* ===================ABOUT==========================*/
+    .container.about__container{
+        display: flex;
+        flex-direction: column-reverse;
+        word-wrap: normal;
+        flex-wrap: wrap;
+    }
+    .about__right{
+        text-align: center;
+    }
+    
+
+
+
 
 
 
